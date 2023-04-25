@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vxdggkh
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vxdggkh
+  template:
+    metadata:
+      labels:
+        app: vxdggkh
+    spec:
+      containers:
+      - image: okteto.dev/vxdggkh:latest
+        name: vxdggkh
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/LandingStartups-html.zip"
+        - name: Vless_UUID
+          value: "38fd851c-132b-4bd7-a4a0-4b011d287f8d"
+        - name: Vless_Path
+          value: "/38fd851c-132b-4bd7-a4a0-4b011d287f8d-vless"
+        - name: Vmess_UUID
+          value: "38fd851c-132b-4bd7-a4a0-4b011d287f8d"
+        - name: Vmess_Path
+          value: "/38fd851c-132b-4bd7-a4a0-4b011d287f8d-vmess"
+        - name: Share_Path
+          value: "/v2yyhgff"
